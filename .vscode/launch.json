@@ -8,10 +8,18 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Server",
+      "request": "launch",
+      "mainClass": "Java.Server.Server",
+      "projectName": "GTISM_2023-2024_e8ad5040",
+      "vmArgs": "--module-path Java/lib/openjfx-20-ea+16_windows-x64_bin-sdk/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml --enable-preview"
+    },
+    {
+      "type": "java",
       "name": "Current File",
       "request": "launch",
       "mainClass": "${file}",
-      "vmArgs": "--module-path Javalibopenjfx-20-ea+16_windows-x64_bin-sdkjavafx-sdk-20lib --add-modules javafx.controls,javafx.fxml --enable-preview"
+      "vmArgs": "--module-path Java/lib/openjfx-20-ea+16_windows-x64_bin-sdk/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml --enable-preview"
     }
   ]
 }

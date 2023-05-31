@@ -5,16 +5,15 @@ package Java.Server;
  */
 public class Logger {
 
-    /** Determines if the Logger prints to the terminal */
-    private static boolean terminalOutput = true;
-    /** Determines if the Logger prints to the debug console in the app */
-    private static boolean debug = true;
-    /** Determines if the Logger prints to a log file */
-    private static boolean log = true;
-
-    /** Print the specified string */
+    
+    /** Prints the specified string. Relies on the variables found in the {@link Java.Server.Settings} class to determine to where the message is printed.
+     * @param message The message to be printed
+    */
     public static void print(String message) {
-        if (terminalOutput)
+        if (!Settings.loggerEnabled)
+            return;
+        
+        if (Settings.loggerTerminalOutput)
             System.out.println(message);
     }
 }
