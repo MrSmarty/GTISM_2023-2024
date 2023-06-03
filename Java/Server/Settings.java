@@ -8,7 +8,17 @@ public class Settings {
     /** Determines if the Logger prints to the terminal */
     public static boolean loggerTerminalOutput = true;
     /** Determines if the Logger prints to the debug console in the app */
-    public static boolean loggerDebug = true;
+    public static boolean loggerConsole = true;
     /** Determines if the Logger prints to a log file */
     public static boolean loggerFile = true;
+
+    /** Boolean that determines if the Logger is enabled */
+    public static boolean debugEnabled = true;
+
+    /** Determines if the Logger prints the debug to the terminal */
+    public static boolean debugTerminalOutput = true;
+    /** Determines if the Logger prints the debug to the debug console in the app */
+    public static boolean debugConsole = true;
+    /** Determines if the Logger prints the debug to a log file */
+    public static boolean debugFile = true;
 }

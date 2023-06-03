@@ -1,0 +1,10 @@
+{
+  "loggerEnabled": true,
+  "loggerTerminalOutput": true,
+  "loggerConsole": true,
+  "loggerFile": true,
+  "debugEnabled": true,
+  "debugTerminalOutput": true,
+  "debugConsole": true,
+  "debugFile": true
+}
