@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 public class Server extends Application {
 
     /** The minimum time to display the splash screen */
-    private final float splashDelay = 1;
+    private final int splashDelay = 1;
 
     private Text progressText;
 
@@ -55,7 +55,10 @@ public class Server extends Application {
         dataHandler = new DataHandler();
     }
 
-    /** Creates a small stage to display during initialization (A splash screen) that contains a graphic, progress bar, and text to update the user */
+    /**
+     * Creates a small stage to display during initialization (A splash screen) that
+     * contains a graphic, progress bar, and text to update the user
+     */
     private Scene setupInitializationScreen() {
         StackPane root = new StackPane();
 
