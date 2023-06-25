@@ -3,7 +3,6 @@ package Java.Server;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
@@ -16,8 +15,10 @@ import javafx.stage.Stage;
 public class Server extends Application {
 
     /** The minimum time to display the splash screen */
-    private final int splashDelay = 1;
+    // TODO: make this work:
+    // private final int splashDelay = 1;
 
+    /** The text to display that shows the stuatus during the splash screen */
     private Text progressText;
 
     /** The width of the initialization screen */
