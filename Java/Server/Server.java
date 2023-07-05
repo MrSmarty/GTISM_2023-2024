@@ -38,6 +38,7 @@ public class Server extends Application {
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
         initialize();
+        login();
     }
 
     /**
@@ -77,5 +78,10 @@ public class Server extends Application {
 
         Scene scene = new Scene(root, initializationWidth, initializationHeight);
         return scene;
+    }
+
+    /** Setup the login screen and validate credentials and such */
+    private void login() {
+
     }
 }
